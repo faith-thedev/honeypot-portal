@@ -1,0 +1,470 @@
+2026-05-13 02:29:51,178 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.226.45:5000
+2026-05-13 02:29:51,185 [INFO] [33mPress CTRL+C to quit[0m
+2026-05-13 02:30:10,473 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-05-13 02:30:10,862 [INFO] 127.0.0.1 - - [13/May/2026 02:30:10] "GET / HTTP/1.1" 200 -
+2026-05-13 02:30:12,352 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:30:12,356 [INFO] 127.0.0.1 - - [13/May/2026 02:30:12] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:30:39,429 [INFO] LOGGED | ip=192.168.226.45     | type=RECON                     | path=/
+2026-05-13 02:30:39,495 [INFO] 192.168.226.45 - - [13/May/2026 02:30:39] "GET / HTTP/1.1" 200 -
+2026-05-13 02:30:41,779 [INFO] LOGGED | ip=192.168.226.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:30:41,781 [INFO] 192.168.226.45 - - [13/May/2026 02:30:41] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:31:01,656 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-05-13 02:31:01,658 [INFO] 127.0.0.1 - - [13/May/2026 02:31:01] "GET / HTTP/1.1" 200 -
+2026-05-13 02:31:31,801 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-05-13 02:31:31,802 [INFO] 127.0.0.1 - - [13/May/2026 02:31:31] "GET / HTTP/1.1" 200 -
+2026-05-13 02:31:47,804 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-05-13 02:31:47,806 [INFO] 127.0.0.1 - - [13/May/2026 02:31:47] "GET / HTTP/1.1" 200 -
+2026-05-13 02:31:49,914 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:31:49,916 [INFO] 127.0.0.1 - - [13/May/2026 02:31:49] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:34:35,692 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/login
+2026-05-13 02:34:35,693 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=2021/10969 | type=CREDENTIAL_PROBE
+2026-05-13 02:34:35,694 [INFO] 127.0.0.1 - - [13/May/2026 02:34:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-13 02:34:35,732 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/portalhome.php
+2026-05-13 02:34:36,145 [INFO] 127.0.0.1 - - [13/May/2026 02:34:36] "GET /portalhome.php HTTP/1.1" 200 -
+2026-05-13 02:34:36,922 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:34:36,924 [INFO] 127.0.0.1 - - [13/May/2026 02:34:36] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:35:39,117 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:35:39,121 [INFO] 127.0.0.1 - - [13/May/2026 02:35:39] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:35:46,205 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/payment-details.php
+2026-05-13 02:35:46,268 [INFO] 127.0.0.1 - - [13/May/2026 02:35:46] "GET /payment-details.php HTTP/1.1" 200 -
+2026-05-13 02:35:46,383 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:35:46,385 [INFO] 127.0.0.1 - - [13/May/2026 02:35:46] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:35:51,586 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/payment-details.php
+2026-05-13 02:35:51,614 [INFO] 127.0.0.1 - - [13/May/2026 02:35:51] "GET /payment-details.php HTTP/1.1" 200 -
+2026-05-13 02:35:51,769 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:35:51,771 [INFO] 127.0.0.1 - - [13/May/2026 02:35:51] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:35:55,218 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:35:55,219 [INFO] 127.0.0.1 - - [13/May/2026 02:35:55] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:36:41,717 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/printresult.php
+2026-05-13 02:36:41,971 [INFO] 127.0.0.1 - - [13/May/2026 02:36:41] "GET /printresult.php HTTP/1.1" 200 -
+2026-05-13 02:36:42,725 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:36:42,727 [INFO] 127.0.0.1 - - [13/May/2026 02:36:42] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:36:50,827 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/printresult.php
+2026-05-13 02:36:50,877 [INFO] 127.0.0.1 - - [13/May/2026 02:36:50] "GET /printresult.php?session=2023/2024&semester=First&level=300&action=print HTTP/1.1" 200 -
+2026-05-13 02:36:51,331 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:36:51,335 [INFO] 127.0.0.1 - - [13/May/2026 02:36:51] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:36:53,585 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/printresult.php
+2026-05-13 02:36:53,624 [INFO] 127.0.0.1 - - [13/May/2026 02:36:53] "GET /printresult.php?session=2022/2023&semester=Second&level=200&action=print HTTP/1.1" 200 -
+2026-05-13 02:36:54,474 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:36:54,476 [INFO] 127.0.0.1 - - [13/May/2026 02:36:54] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:37:00,382 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:37:00,384 [INFO] 127.0.0.1 - - [13/May/2026 02:37:00] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:37:01,911 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:37:01,916 [INFO] 127.0.0.1 - - [13/May/2026 02:37:01] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:37:03,758 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:37:03,760 [INFO] 127.0.0.1 - - [13/May/2026 02:37:03] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:37:15,982 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-05-13 02:37:15,985 [INFO] 127.0.0.1 - - [13/May/2026 02:37:15] "GET / HTTP/1.1" 200 -
+2026-05-13 02:37:17,501 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:37:17,503 [INFO] 127.0.0.1 - - [13/May/2026 02:37:17] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:37:47,366 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/login
+2026-05-13 02:37:47,368 [INFO] 127.0.0.1 - - [13/May/2026 02:37:47] "GET /login HTTP/1.1" 200 -
+2026-05-13 02:37:48,731 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:37:48,822 [INFO] 127.0.0.1 - - [13/May/2026 02:37:48] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:38:05,727 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/login
+2026-05-13 02:38:05,731 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=2022/10235 | type=CREDENTIAL_PROBE
+2026-05-13 02:38:05,733 [INFO] 127.0.0.1 - - [13/May/2026 02:38:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-13 02:38:05,797 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/portalhome.php
+2026-05-13 02:38:05,829 [INFO] 127.0.0.1 - - [13/May/2026 02:38:05] "GET /portalhome.php HTTP/1.1" 200 -
+2026-05-13 02:38:06,348 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:38:06,349 [INFO] 127.0.0.1 - - [13/May/2026 02:38:06] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:39:11,576 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/login
+2026-05-13 02:39:11,578 [INFO] 127.0.0.1 - - [13/May/2026 02:39:11] "GET /login HTTP/1.1" 200 -
+2026-05-13 02:39:12,280 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:39:12,282 [INFO] 127.0.0.1 - - [13/May/2026 02:39:12] "GET /favicon.ico HTTP/1.1" 200 -
+2026-05-13 02:39:15,875 [INFO] TTP detected: SQL_INJECTION             | pattern=''\s*(or|and)\s*'?\d'
+2026-05-13 02:39:15,925 [INFO] LOGGED | ip=127.0.0.1          | type=SQL_INJECTION             | path=/login
+2026-05-13 02:39:15,926 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=' OR 1=1 -- | type=SQL_INJECTION
+2026-05-13 02:39:15,927 [INFO] 127.0.0.1 - - [13/May/2026 02:39:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-05-13 02:39:16,060 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/portalhome.php
+2026-05-13 02:39:16,082 [INFO] 127.0.0.1 - - [13/May/2026 02:39:16] "GET /portalhome.php HTTP/1.1" 200 -
+2026-05-13 02:39:16,999 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-05-13 02:39:17,112 [INFO] 127.0.0.1 - - [13/May/2026 02:39:17] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 03:54:40,693 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.176.45:5000
+2026-06-02 03:54:40,697 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-02 03:54:55,546 [INFO] LOGGED | ip=192.168.176.45     | type=RECON                     | path=/
+2026-06-02 03:54:55,755 [INFO] 192.168.176.45 - - [02/Jun/2026 03:54:55] "GET / HTTP/1.1" 200 -
+2026-06-02 03:54:56,842 [INFO] LOGGED | ip=192.168.176.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-02 03:54:56,845 [INFO] 192.168.176.45 - - [02/Jun/2026 03:54:56] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 04:16:51,540 [INFO] LOGGED | ip=192.168.176.45     | type=RECON                     | path=/login
+2026-06-02 04:16:51,545 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric= | type=RECON
+2026-06-02 04:16:51,549 [INFO] 192.168.176.45 - - [02/Jun/2026 04:16:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 04:16:51,607 [INFO] LOGGED | ip=192.168.176.45     | type=RECON                     | path=/portalhome.php
+2026-06-02 04:16:51,730 [INFO] 192.168.176.45 - - [02/Jun/2026 04:16:51] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 04:16:52,737 [INFO] LOGGED | ip=192.168.176.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-02 04:16:52,739 [INFO] 192.168.176.45 - - [02/Jun/2026 04:16:52] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 04:43:45,430 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.176.45:5000
+2026-06-02 04:43:45,435 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-02 04:44:13,376 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:13,377 [WARNING] DB unavailable — FLAT LOG | ip=127.0.0.1 | path=/ | type=RECON | payload=
+2026-06-02 04:44:13,395 [INFO] 127.0.0.1 - - [02/Jun/2026 04:44:13] "GET / HTTP/1.1" 200 -
+2026-06-02 04:44:15,706 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:15,707 [WARNING] DB unavailable — FLAT LOG | ip=127.0.0.1 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 04:44:15,708 [INFO] 127.0.0.1 - - [02/Jun/2026 04:44:15] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 04:44:42,484 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:42,485 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/ | type=RECON | payload=
+2026-06-02 04:44:42,488 [INFO] 192.168.176.45 - - [02/Jun/2026 04:44:42] "GET / HTTP/1.1" 200 -
+2026-06-02 04:44:43,275 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:43,275 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 04:44:43,277 [INFO] 192.168.176.45 - - [02/Jun/2026 04:44:43] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 04:44:48,204 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:48,204 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=,
+2026-06-02 04:44:48,205 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 04:44:48,206 [INFO] 192.168.176.45 - - [02/Jun/2026 04:44:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 04:44:48,222 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:48,223 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 04:44:48,234 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:48,242 [INFO] 192.168.176.45 - - [02/Jun/2026 04:44:48] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 04:44:48,563 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:44:48,563 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 04:44:48,567 [INFO] 192.168.176.45 - - [02/Jun/2026 04:44:48] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 04:47:44,621 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:47:44,621 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 04:47:44,631 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:47:44,632 [INFO] 192.168.176.45 - - [02/Jun/2026 04:47:44] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 04:47:45,429 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 04:47:45,429 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 04:47:45,430 [INFO] 192.168.176.45 - - [02/Jun/2026 04:47:45] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:06:38,332 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:38,334 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/ | type=RECON | payload=
+2026-06-02 05:06:38,334 [INFO] 192.168.176.45 - - [02/Jun/2026 05:06:38] "GET / HTTP/1.1" 200 -
+2026-06-02 05:06:39,248 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:39,249 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:06:39,249 [INFO] 192.168.176.45 - - [02/Jun/2026 05:06:39] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:06:48,078 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:48,078 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=MUBT
+2026-06-02 05:06:48,078 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 05:06:48,080 [INFO] 192.168.176.45 - - [02/Jun/2026 05:06:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:06:48,097 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:48,098 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:06:48,111 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:48,112 [INFO] 192.168.176.45 - - [02/Jun/2026 05:06:48] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:06:48,453 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:06:48,453 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:06:48,455 [INFO] 192.168.176.45 - - [02/Jun/2026 05:06:48] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:11:51,172 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:11:51,172 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:11:51,173 [INFO] 192.168.176.45 - - [02/Jun/2026 05:11:51] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:11:56,292 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:11:56,296 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=MUBT
+2026-06-02 05:11:56,297 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 05:11:56,299 [INFO] 192.168.176.45 - - [02/Jun/2026 05:11:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:11:56,315 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:11:56,315 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:11:56,326 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:11:56,331 [INFO] 192.168.176.45 - - [02/Jun/2026 05:11:56] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:11:57,209 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:11:57,215 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:11:57,218 [INFO] 192.168.176.45 - - [02/Jun/2026 05:11:57] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:12:28,974 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:12:28,975 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:12:28,979 [INFO] 192.168.176.45 - - [02/Jun/2026 05:12:28] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:12:33,306 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:12:33,307 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2020/07841&password=MUBT
+2026-06-02 05:12:33,310 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-02 05:12:33,311 [INFO] 192.168.176.45 - - [02/Jun/2026 05:12:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:12:33,329 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:12:33,330 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:12:33,345 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:12:33,346 [INFO] 192.168.176.45 - - [02/Jun/2026 05:12:33] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:12:33,672 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:12:33,672 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:12:33,681 [INFO] 192.168.176.45 - - [02/Jun/2026 05:12:33] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:30:39,863 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:39,865 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:30:39,877 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:39,879 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:39] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:30:40,821 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:40,821 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:30:40,822 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:40] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:30:43,781 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:43,782 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:30:43,791 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:43,792 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:43] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:30:44,090 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:44,090 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:30:44,093 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:44] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:30:45,053 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:45,054 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/ | type=RECON | payload=
+2026-06-02 05:30:45,055 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:45] "GET / HTTP/1.1" 200 -
+2026-06-02 05:30:45,330 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:45,331 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:30:45,333 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:45] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:30:56,827 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:56,833 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=TYC
+2026-06-02 05:30:56,834 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 05:30:56,837 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:30:56,874 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:56,877 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:30:56,889 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:56,892 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:56] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:30:57,206 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:30:57,213 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:30:57,215 [INFO] 192.168.176.45 - - [02/Jun/2026 05:30:57] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:31:47,603 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.176.45:5000
+2026-06-02 05:31:47,603 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-02 05:31:53,780 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:31:53,780 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/ | type=RECON | payload=
+2026-06-02 05:31:53,799 [INFO] 192.168.176.45 - - [02/Jun/2026 05:31:53] "GET / HTTP/1.1" 200 -
+2026-06-02 05:31:54,100 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:31:54,101 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:31:54,102 [INFO] 192.168.176.45 - - [02/Jun/2026 05:31:54] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:05,447 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:05,448 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=pineapple
+2026-06-02 05:32:05,449 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 05:32:05,450 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:32:05,472 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:05,474 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:32:05,490 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:05,505 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:05] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:32:05,965 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:05,965 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:05,967 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:05] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:12,152 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:12,152 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:12,153 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:12] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:21,274 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:21,274 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2020/07841&password=pineapple
+2026-06-02 05:32:21,275 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-02 05:32:21,277 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:32:21,299 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:21,300 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:32:21,316 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:21,318 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:21] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:32:21,668 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:21,668 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:21,669 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:21] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:37,309 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:37,309 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=RECON | payload=
+2026-06-02 05:32:37,310 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:37] "GET /login HTTP/1.1" 200 -
+2026-06-02 05:32:37,745 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:37,746 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:37,747 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:37] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:48,661 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:48,662 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2019/06423&password=pine
+2026-06-02 05:32:48,663 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-02 05:32:48,664 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:32:48,691 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:48,693 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:32:48,707 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:48,709 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:48] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:32:49,081 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:49,082 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:49,082 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:49] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:32:55,321 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:55,321 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=RECON | payload=
+2026-06-02 05:32:55,323 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:55] "GET /login HTTP/1.1" 200 -
+2026-06-02 05:32:55,684 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:32:55,687 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:32:55,689 [INFO] 192.168.176.45 - - [02/Jun/2026 05:32:55] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-02 05:33:06,597 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:33:06,597 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2020/07841&password=.kuinb
+2026-06-02 05:33:06,599 [INFO] LOGIN ACCEPTED | ip=192.168.176.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-02 05:33:06,601 [INFO] 192.168.176.45 - - [02/Jun/2026 05:33:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-02 05:33:06,623 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:33:06,623 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-02 05:33:06,634 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:33:06,640 [INFO] 192.168.176.45 - - [02/Jun/2026 05:33:06] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-02 05:33:06,959 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-02 05:33:06,961 [WARNING] DB unavailable — FLAT LOG | ip=192.168.176.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-02 05:33:06,963 [INFO] 192.168.176.45 - - [02/Jun/2026 05:33:06] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:17:51,306 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.74.45:5000
+2026-06-06 23:17:51,309 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-06 23:19:49,613 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:19:49,855 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/ | type=RECON | payload=
+2026-06-06 23:19:51,558 [INFO] 192.168.74.45 - - [06/Jun/2026 23:19:51] "GET / HTTP/1.1" 200 -
+2026-06-06 23:20:19,575 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:20:19,610 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-06 23:20:19,611 [INFO] 192.168.74.45 - - [06/Jun/2026 23:20:19] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:22:42,985 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:22:42,989 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/login | type=CREDENTIAL_PROBE | payload=matric_no=2020/07841&password=hrv65drery6x
+2026-06-06 23:22:42,990 [INFO] LOGIN ACCEPTED | ip=192.168.74.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-06 23:22:42,991 [INFO] 192.168.74.45 - - [06/Jun/2026 23:22:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-06 23:22:43,015 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:22:43,022 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-06 23:22:43,037 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:22:43,192 [INFO] 192.168.74.45 - - [06/Jun/2026 23:22:43] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-06 23:22:43,890 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:22:43,891 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-06 23:22:43,894 [INFO] 192.168.74.45 - - [06/Jun/2026 23:22:43] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:23:51,770 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:23:51,771 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/portalhome.php | type=RECON | payload=
+2026-06-06 23:23:51,783 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:23:51,784 [INFO] 192.168.74.45 - - [06/Jun/2026 23:23:51] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-06 23:23:52,105 [ERROR] DB connection failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+2026-06-06 23:23:52,106 [WARNING] DB unavailable — FLAT LOG | ip=192.168.74.45 | path=/favicon.ico | type=CREDENTIAL_PROBE | payload=favicon.ico?
+2026-06-06 23:23:52,108 [INFO] 192.168.74.45 - - [06/Jun/2026 23:23:52] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:53:25,919 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.74.45:5000
+2026-06-06 23:53:25,922 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-06 23:54:30,270 [INFO] LOGGED | ip=192.168.74.45      | type=RECON                     | path=/
+2026-06-06 23:54:30,287 [INFO] 192.168.74.45 - - [06/Jun/2026 23:54:30] "GET / HTTP/1.1" 200 -
+2026-06-06 23:54:31,033 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-06 23:54:31,034 [INFO] 192.168.74.45 - - [06/Jun/2026 23:54:31] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:54:38,154 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/login
+2026-06-06 23:54:38,157 [INFO] LOGIN ACCEPTED | ip=192.168.74.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-06 23:54:38,160 [INFO] 192.168.74.45 - - [06/Jun/2026 23:54:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-06 23:54:38,212 [INFO] LOGGED | ip=192.168.74.45      | type=RECON                     | path=/portalhome.php
+2026-06-06 23:54:38,312 [INFO] 192.168.74.45 - - [06/Jun/2026 23:54:38] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-06 23:54:38,853 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-06 23:54:38,863 [INFO] 192.168.74.45 - - [06/Jun/2026 23:54:38] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:55:49,425 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-06 23:55:49,426 [INFO] 192.168.74.45 - - [06/Jun/2026 23:55:49] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-06 23:55:55,486 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/login
+2026-06-06 23:55:55,488 [INFO] LOGIN ACCEPTED | ip=192.168.74.45 | matric=HI | type=CREDENTIAL_PROBE
+2026-06-06 23:55:55,489 [INFO] 192.168.74.45 - - [06/Jun/2026 23:55:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-06 23:55:55,512 [INFO] LOGGED | ip=192.168.74.45      | type=RECON                     | path=/portalhome.php
+2026-06-06 23:55:55,537 [INFO] 192.168.74.45 - - [06/Jun/2026 23:55:55] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-06 23:55:55,861 [INFO] LOGGED | ip=192.168.74.45      | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-06 23:55:55,865 [INFO] 192.168.74.45 - - [06/Jun/2026 23:55:55] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-21 20:50:20,660 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.185.45:5000
+2026-06-21 20:50:20,727 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-21 20:52:00,936 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/
+2026-06-21 20:52:01,360 [INFO] 127.0.0.1 - - [21/Jun/2026 20:52:01] "GET / HTTP/1.1" 200 -
+2026-06-21 20:52:02,340 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-21 20:52:02,342 [INFO] 127.0.0.1 - - [21/Jun/2026 20:52:02] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-21 20:52:22,429 [INFO] LOGGED | ip=192.168.185.45     | type=RECON                     | path=/
+2026-06-21 20:52:22,432 [INFO] 192.168.185.45 - - [21/Jun/2026 20:52:22] "GET / HTTP/1.1" 200 -
+2026-06-21 20:52:25,559 [INFO] LOGGED | ip=192.168.185.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-21 20:52:25,561 [INFO] 192.168.185.45 - - [21/Jun/2026 20:52:25] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-21 20:54:52,503 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.185.45:5000
+2026-06-21 20:54:52,504 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-22 00:07:01,249 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.185.45:5000
+2026-06-22 00:07:01,254 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-22 00:07:18,839 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:07:18,873 [INFO] 192.168.185.45 - - [22/Jun/2026 00:07:18] "GET / HTTP/1.1" 200 -
+2026-06-22 00:07:20,961 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:07:20,963 [INFO] 192.168.185.45 - - [22/Jun/2026 00:07:20] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:08:19,255 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:08:19,264 [INFO] LOGIN ACCEPTED | ip=192.168.185.45 | matric=2019/06423 | type=CREDENTIAL_PROBE
+2026-06-22 00:08:19,268 [INFO] 192.168.185.45 - - [22/Jun/2026 00:08:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:08:21,148 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:08:22,595 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:08:22,804 [INFO] 192.168.185.45 - - [22/Jun/2026 00:08:22] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:08:24,679 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:08:24,681 [INFO] 192.168.185.45 - - [22/Jun/2026 00:08:24] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:09:17,319 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:17,326 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:17] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:09:21,889 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:21,891 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:21] "GET /login HTTP/1.1" 200 -
+2026-06-22 00:09:23,625 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:23,632 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:23] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:09:36,521 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:36,522 [INFO] LOGIN ACCEPTED | ip=192.168.185.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:09:36,524 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:09:37,898 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:39,228 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:09:39,236 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:39] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:09:40,863 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:09:40,868 [INFO] 192.168.185.45 - - [22/Jun/2026 00:09:40] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:15:01,431 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:02,765 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:15:02,769 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:02] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:15:04,763 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:04,769 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:04] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:15:06,873 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:06,883 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:06] "GET /portalhome HTTP/1.1" 200 -
+2026-06-22 00:15:08,478 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:08,482 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:08] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:15:17,076 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:17,077 [INFO] LOGIN ACCEPTED | ip=192.168.185.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:15:17,078 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:15:18,514 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:19,972 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:15:19,979 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:19] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:15:21,637 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:21,641 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:21] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:15:27,926 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:27,932 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:27] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:15:32,173 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:32,175 [INFO] LOGIN ACCEPTED | ip=192.168.185.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:15:32,177 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:15:33,510 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:35,124 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:15:35,134 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:35] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:15:36,932 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:15:36,935 [INFO] 192.168.185.45 - - [22/Jun/2026 00:15:36] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:17:44,709 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:44,712 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:44] "GET /login HTTP/1.1" 200 -
+2026-06-22 00:17:46,210 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:46,213 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:46] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2026-06-22 00:17:47,747 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:47,751 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:47] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:17:55,419 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:55,421 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:17:55,425 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:17:56,880 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:57,705 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:17:57,707 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:17:57,710 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:17:58,435 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:17:58,452 [INFO] 127.0.0.1 - - [22/Jun/2026 00:17:58] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:17:59,639 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:18:01,055 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:18:01,061 [INFO] 127.0.0.1 - - [22/Jun/2026 00:18:01] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:18:03,050 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:18:03,054 [INFO] 127.0.0.1 - - [22/Jun/2026 00:18:03] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 200 -
+2026-06-22 00:18:03,210 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:18:03,214 [INFO] 127.0.0.1 - - [22/Jun/2026 00:18:03] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:18:53,771 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:18:53,780 [INFO] 127.0.0.1 - - [22/Jun/2026 00:18:53] "GET /login HTTP/1.1" 200 -
+2026-06-22 00:18:57,142 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:18:57,143 [INFO] 127.0.0.1 - - [22/Jun/2026 00:18:57] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:19:05,252 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:19:05,255 [INFO] LOGIN ACCEPTED | ip=127.0.0.1 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:19:05,258 [INFO] 127.0.0.1 - - [22/Jun/2026 00:19:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:19:06,731 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:19:08,360 [ERROR] mock_students query failed: 1146 (42S02): Table 'defaultdb.mock_students' doesn't exist
+2026-06-22 00:19:08,366 [INFO] 127.0.0.1 - - [22/Jun/2026 00:19:08] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:19:10,713 [ERROR] Insert failed: 1146 (42S02): Table 'defaultdb.attack_logs' doesn't exist
+2026-06-22 00:19:10,715 [INFO] 127.0.0.1 - - [22/Jun/2026 00:19:10] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:27:25,456 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.185.45:5000
+2026-06-22 00:27:25,458 [INFO] [33mPress CTRL+C to quit[0m
+2026-06-22 00:27:33,745 [INFO] LOGGED | ip=192.168.185.45     | type=RECON                     | path=/
+2026-06-22 00:27:33,781 [INFO] 192.168.185.45 - - [22/Jun/2026 00:27:33] "GET / HTTP/1.1" 200 -
+2026-06-22 00:27:36,115 [INFO] LOGGED | ip=192.168.185.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-22 00:27:36,128 [INFO] 192.168.185.45 - - [22/Jun/2026 00:27:36] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:27:52,852 [INFO] LOGGED | ip=192.168.185.45     | type=CREDENTIAL_PROBE          | path=/login
+2026-06-22 00:27:52,854 [INFO] LOGIN ACCEPTED | ip=192.168.185.45 | matric=2020/07841 | type=CREDENTIAL_PROBE
+2026-06-22 00:27:52,857 [INFO] 192.168.185.45 - - [22/Jun/2026 00:27:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-06-22 00:27:54,409 [INFO] LOGGED | ip=192.168.185.45     | type=RECON                     | path=/portalhome.php
+2026-06-22 00:27:56,124 [INFO] 192.168.185.45 - - [22/Jun/2026 00:27:56] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:27:58,119 [INFO] LOGGED | ip=192.168.185.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-22 00:27:58,124 [INFO] 192.168.185.45 - - [22/Jun/2026 00:27:58] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:30:56,237 [INFO] LOGGED | ip=127.0.0.1          | type=RECON                     | path=/portalhome.php
+2026-06-22 00:30:57,675 [INFO] 127.0.0.1 - - [22/Jun/2026 00:30:57] "GET /portalhome.php HTTP/1.1" 200 -
+2026-06-22 00:31:00,313 [INFO] LOGGED | ip=127.0.0.1          | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-22 00:31:00,315 [INFO] 127.0.0.1 - - [22/Jun/2026 00:31:00] "GET /favicon.ico HTTP/1.1" 200 -
+2026-06-22 00:31:02,492 [INFO] LOGGED | ip=192.168.185.45     | type=RECON                     | path=/
+2026-06-22 00:31:02,493 [INFO] 192.168.185.45 - - [22/Jun/2026 00:31:02] "GET / HTTP/1.1" 200 -
+2026-06-22 00:31:05,048 [INFO] LOGGED | ip=192.168.185.45     | type=CREDENTIAL_PROBE          | path=/favicon.ico
+2026-06-22 00:31:05,050 [INFO] 192.168.185.45 - - [22/Jun/2026 00:31:05] "GET /favicon.ico HTTP/1.1" 200 -

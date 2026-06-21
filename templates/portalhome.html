@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page — Bells University Student Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body { background: #f0f0f0; font-size: 13px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+  /* ── Top bar ── */
+  .top-bar { background: #222; color: #ccc; display: flex; align-items: center;
+             justify-content: space-between; padding: 0 14px; min-height: 36px; }
+  .top-bar .left  { display: flex; align-items: center; gap: 16px; }
+  .top-bar .right { display: flex; align-items: center; gap: 16px; }
+  .top-bar a { color: #ccc; font-size: 12px; text-decoration: none; }
+  .top-bar a:hover { color: #fff; }
+  .top-bar .username { font-size: 12px; font-weight: 600; }
+
+  /* ── Header strip with icon buttons ── */
+  .header-strip { background: #fff; border-bottom: 1px solid #ddd; display: flex;
+                  align-items: center; justify-content: space-between; padding: 10px 18px; }
+  .header-strip .logo-area { display: flex; align-items: center; }
+  .header-strip .logo-area img { height: 68px; }
+  .header-strip .logo-text h3 { color: #2e6da4; margin: 0; font-size: 18px; font-weight: 700; line-height: 1.2; }
+  .header-strip .logo-text h5 { color: #5a9fd4; margin: 3px 0 0; font-size: 13px; font-weight: 600; }
+  .icon-btns { display: flex; gap: 4px; }
+  .icon-btn { border: 1px solid #ccc; border-radius: 3px; background: #fff; padding: 8px 12px;
+              text-align: center; font-size: 11px; color: #555; cursor: pointer; min-width: 80px;
+              text-decoration: none; display: block; }
+  .icon-btn:hover { background: #f5f5f5; color: #333; text-decoration: none; }
+  .icon-btn i { display: block; font-size: 20px; margin-bottom: 3px; }
+
+  /* ── Layout ── */
+  .layout { display: flex; min-height: calc(100vh - 120px); }
+
+  /* ── Sidebar ── */
+  .sidebar { width: 210px; min-width: 210px; background: #fff; border-right: 1px solid #ddd; padding: 0; }
+  .sidebar .menu-header { background: #444; color: #fff; padding: 9px 14px; font-size: 12px; font-weight: 600; }
+  .sidebar .menu-header i { margin-right: 6px; }
+  .sidebar .section-title { background: #f7f7f7; border-bottom: 1px solid #e0e0e0; border-top: 1px solid #e0e0e0;
+                            padding: 7px 14px; font-size: 12px; font-weight: 700; color: #555; display: flex; align-items: center; gap: 6px; }
+  .sidebar a.menu-item { display: block; padding: 7px 14px 7px 20px; font-size: 12px; color: #337ab7;
+                         border-bottom: 1px solid #f0f0f0; text-decoration: none; }
+  .sidebar a.menu-item:hover { background: #f0f7ff; }
+  .sidebar a.menu-item.danger { color: #c00; }
+
+  /* ── Main content ── */
+  .main { flex: 1; padding: 0; }
+  .fin-alert { background: #fff; border-bottom: 1px solid #ddd; padding: 8px 16px; text-align: center; }
+  .fin-alert a { color: #c00; font-size: 12px; font-weight: 700; }
+  .page-header-bar { background: #444; color: #fff; padding: 9px 16px; font-size: 13px;
+                     display: flex; align-items: center; gap: 8px; }
+  .page-header-bar .welcome { font-weight: normal; font-size: 12px; color: #ccc; }
+
+  /* ── Content card ── */
+  .content-card { background: #fff; border: 1px solid #ddd; margin: 16px; border-radius: 3px; }
+  .section-head { background: #f7f7f7; border-bottom: 1px solid #e0e0e0; padding: 9px 14px;
+                  font-size: 12px; font-weight: 700; color: #444; letter-spacing: .3px; }
+  .info-table { width: 100%; border-collapse: collapse; }
+  .info-table td { padding: 9px 14px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+  .info-table td:first-child { color: #777; font-size: 12px; width: 220px; }
+  .info-table td:last-child  { color: #2e6da4; font-weight: 700; font-size: 12px; }
+  .status-closed  { color: #c00 !important; font-weight: 700 !important; }
+  .status-pending { color: #c00 !important; font-weight: 700 !important; }
+  .two-col td { width: 50%; }
+
+  .footer-copy { text-align: center; font-size: 12px; color: #888; padding: 14px;
+                 border-top: 1px solid #ddd; margin: 0 16px 16px; }
+  .footer-copy a { color: #5b9bd5; }
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+  <div class="left">
+    <span class="username">
+      <i class="fa fa-user-circle"></i>
+      {{ student.full_name }} &nbsp;▾
+    </span>
+    <a href="#"><i class="fa fa-bars"></i></a>
+  </div>
+  <div class="right">
+    <a href="#"><i class="fa fa-briefcase"></i> Change Password</a>
+    <a href="/login"><i class="fa fa-sign-out"></i> Logout</a>
+  </div>
+</div>
+
+<!-- Header strip -->
+<div class="header-strip">
+  <div class="logo-area">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bells_University_of_Technology_logo.png/200px-Bells_University_of_Technology_logo.png"
+         alt="Bells Logo" onerror="this.style.display='none'" style="margin-right:10px;">
+    <div class="logo-text">
+      <h3>BELLS UNIVERSITY<br>OF TECHNOLOGY</h3>
+      <h5>Student Portal</h5>
+    </div>
+  </div>
+  <div class="icon-btns">
+    <a class="icon-btn" href="/portalhome.php"><i class="fa fa-desktop"></i>Home Page</a>
+    <a class="icon-btn" href="#"><i class="fa fa-book"></i>Register Courses</a>
+    <a class="icon-btn" href="/payment-details.php"><i class="fa fa-dollar"></i>Pay Fees</a>
+    <a class="icon-btn" href="#"><i class="fa fa-user"></i>Profile</a>
+  </div>
+</div>
+
+<!-- Body layout -->
+<div class="layout">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="menu-header"><i class="fa fa-desktop"></i> Personal Menu</div>
+
+    <div class="section-title"><i class="fa fa-list"></i> Payment Module</div>
+    <a class="menu-item" href="/payment-details.php">Pay Fees</a>
+    <a class="menu-item" href="#">Payment History</a>
+
+    <div class="section-title"><i class="fa fa-list"></i> Registration Module</div>
+    <a class="menu-item" href="#">Register Courses</a>
+    <a class="menu-item" href="#">Registration History</a>
+    <a class="menu-item" href="#">Extension Courses</a>
+
+    <div class="section-title"><i class="fa fa-list"></i> Result Module</div>
+    <a class="menu-item" href="/printresult.php">Print Result</a>
+
+    <div class="section-title"><i class="fa fa-home"></i> Hostel Module</div>
+    <a class="menu-item" href="#">Hostel Registration</a>
+    <a class="menu-item" href="#">Print Hostel Form</a>
+
+    <div class="section-title"><i class="fa fa-home"></i> My Wallet</div>
+    <a class="menu-item" href="#">Load Wallet</a>
+    <a class="menu-item" href="#">Move Money</a>
+    <a class="menu-item" href="#">Transaction History</a>
+
+    <div class="section-title"><i class="fa fa-th"></i> Preferences</div>
+    <a class="menu-item" href="#">Profile Preview</a>
+    <a class="menu-item danger" href="#">*ID Card Request Form*</a>
+    <a class="menu-item" href="#">Change Password</a>
+    <a class="menu-item" href="/login">Logout</a>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="fin-alert">
+      <a href="#">Click here to view your Current Financial Status</a>
+    </div>
+    <div class="page-header-bar">
+      <i class="fa fa-bars"></i>
+      <span>Home Page</span>
+      <span class="welcome">Welcome, {{ student.full_name }}</span>
+    </div>
+
+    <div class="content-card">
+      <div class="section-head">BRIEF BIODATA</div>
+      <table class="info-table">
+        <tr><td>Matriculation Number:</td><td>{{ student.matric_no }}</td></tr>
+        <tr><td>Fullname:</td>           <td>{{ student.full_name }}</td></tr>
+        <tr><td>Current Level:</td>      <td>{{ student.level }}</td></tr>
+        <tr><td>Department:</td>         <td>{{ student.department }}</td></tr>
+        <tr><td>Program:</td>            <td>{{ student.program }}</td></tr>
+        <tr><td>State of Origin:</td>    <td>{{ student.state_of_origin }}</td></tr>
+        <tr><td>Phone Number:</td>       <td>{{ student.phone_number }}</td></tr>
+      </table>
+
+      <div class="section-head" style="margin-top:4px;">CURRENT SEMESTER INFORMATION</div>
+      <table class="info-table two-col">
+        <tr>
+          <td>Current Session:</td>
+          <td>{{ student.session }}</td>
+          <td>Current Semester:</td>
+          <td>{{ student.current_semester }}</td>
+        </tr>
+        <tr>
+          <td>Registration Status:</td>
+          <td class="status-closed">Closed</td>
+          <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Normal Registration Closes:</td>
+          <td>Date: 24-09-2025, Time: 06:53am</td>
+          <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Late Registration Closes:</td>
+          <td>Date: 24-09-2025, Time: 06:53am</td>
+          <td>&nbsp;</td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>Tuition Fee Payment:</td>
+          <td class="status-pending">Pending</td>
+          <td>Course Registration:</td>
+          <td class="status-pending">Pending</td>
+        </tr>
+      </table>
+
+      <div class="footer-copy">
+        Copyright &copy; 2026 <a href="#">ESSCON</a>. All rights reserved.
+      </div>
+    </div>
+  </div><!-- /main -->
+</div><!-- /layout -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

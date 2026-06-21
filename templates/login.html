@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page — Bells University of Technology Student Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body { background: #f5f5f5; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 13px; }
+  .top-navbar { background: #222; padding: 0; margin-bottom: 0; border-radius: 0; border: none; min-height: 36px; }
+  .top-navbar .navbar-brand { color: #ccc !important; font-size: 13px; padding: 10px 15px; }
+  .top-navbar .nav > li > a { color: #ccc !important; font-size: 12px; padding: 10px 12px; }
+  .top-navbar .nav > li > a:hover { background: #333; color: #fff !important; }
+  .top-navbar .navbar-toggle .icon-bar { background: #ccc; }
+  .wrapper { max-width: 1140px; margin: 0 auto; padding: 20px 15px; }
+  .logo-area img { height: 80px; }
+  .logo-area { display: flex; align-items: center; padding: 15px 0 20px; }
+  .logo-area .logo-text { margin-left: 10px; }
+  .logo-area .logo-text h2 { color: #2e6da4; font-size: 22px; margin: 0; font-weight: 700; line-height: 1.2; }
+  .logo-area .logo-text h4 { color: #5a9fd4; font-size: 16px; margin: 4px 0 0; font-weight: 600; }
+
+  /* Login card */
+  .login-panel { border: 1px solid #d0d0d0; border-radius: 4px; overflow: hidden; max-width: 400px; margin: 0 auto; box-shadow: 0 1px 4px rgba(0,0,0,.1); }
+  .login-panel .panel-heading { background: #5b9bd5; color: #fff; padding: 12px 18px; font-size: 15px; font-weight: 600; display: flex; align-items: center; justify-content: space-between; }
+  .login-panel .panel-body { background: #fff; padding: 20px 24px 16px; }
+  .login-panel .panel-body .inner-box { border: 1px solid #e0e0e0; border-radius: 3px; padding: 16px; }
+  .login-panel label { font-size: 12px; font-weight: 600; color: #555; margin-bottom: 4px; }
+  .login-panel .form-control { font-size: 13px; height: 34px; border-radius: 3px; border: 1px solid #ccc; background: #eef4fb; }
+  .login-panel .form-control:focus { border-color: #5b9bd5; box-shadow: 0 0 4px rgba(91,155,213,.4); background: #fff; }
+  .btn-signin { background: #e07b39; border: none; color: #fff; border-radius: 3px; padding: 7px 22px; font-size: 13px; font-weight: 600; float: right; }
+  .btn-signin:hover { background: #c96a2a; color: #fff; }
+  .forgot-link { font-size: 12px; color: #5b9bd5; float: right; margin-top: 6px; clear: both; }
+
+  /* Footer notice area */
+  .notice-area { text-align: center; margin-top: 20px; font-size: 13px; }
+  .notice-area .swep-notice { color: #c00; font-weight: 600; margin-top: 8px; }
+  .contact-box { border: none; margin-top: 24px; font-size: 12px; }
+  .contact-box p { color: #2e5fa3; font-weight: 700; margin: 2px 0; }
+  hr.thin { border-color: #ddd; margin: 16px 0; }
+  .footer-copy { text-align: center; font-size: 12px; color: #888; border-top: 1px solid #ddd; padding: 12px 0 8px; margin-top: 30px; }
+  .footer-copy a { color: #5b9bd5; }
+
+  {% if error %}
+  .alert-login { display: block; }
+  {% endif %}
+</style>
+</head>
+<body>
+
+<!-- Top navbar -->
+<nav class="navbar top-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Login Page</a>
+      <a class="navbar-brand" href="#"><i class="fa fa-bars"></i></a>
+    </div>
+    <div class="collapse navbar-collapse" id="topnav">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><i class="fa fa-home"></i> Site Home</a></li>
+        <li><a href="#"><i class="fa fa-envelope"></i> Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="wrapper">
+  <!-- Logo -->
+  <div class="logo-area">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bells_University_of_Technology_logo.png/200px-Bells_University_of_Technology_logo.png"
+         alt="Bells University Logo" onerror="this.style.display='none'">
+    <div class="logo-text">
+      <h2>BELLS UNIVERSITY<br>OF TECHNOLOGY</h2>
+      <h4>Student Portal</h4>
+    </div>
+  </div>
+
+  <!-- Login form — centered -->
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="login-panel">
+        <div class="panel-heading">
+          User Login
+          <i class="fa fa-users fa-lg"></i>
+        </div>
+        <div class="panel-body">
+          <div class="inner-box">
+            {% if error %}
+            <div class="alert alert-danger" style="font-size:12px;padding:8px;">{{ error }}</div>
+            {% endif %}
+            <form method="POST" action="/login" autocomplete="off">
+              <div class="form-group" style="margin-bottom:12px;">
+                <label>Matric Number</label>
+                <input type="text" class="form-control" name="matric_no"
+                       placeholder="" value="{{ request.form.get('matric_no','') }}">
+              </div>
+              <div class="form-group" style="margin-bottom:14px;">
+                <label>Password</label>
+                <input type="password" class="form-control" name="password" placeholder="">
+              </div>
+              <button type="submit" class="btn btn-signin">Sign in</button>
+            </form>
+            <div style="clear:both;"></div>
+            <a href="#" class="forgot-link">forgot password?</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notices -->
+      <div class="notice-area">
+        <p style="font-size:13px;">
+          <a href="#" style="color:#2e6da4;">Click here</a>
+          to create a Portal Account. If you are unable to load your information,
+          please visit the ICT Resource Center first for profiling.
+        </p>
+        <p class="swep-notice">
+          For payment of other bills (e.g. SWEP) click
+          <a href="#" style="color:#2e6da4;">here</a>,
+          payment at the Bank is prohibited.
+        </p>
+      </div>
+
+      <div class="contact-box">
+        <p>Incase you have any issues relating to the Portal you may contact:</p>
+        <p>Phone number: 0703 318 0831</p>
+        <p>Email Address: icthelpdesk@bellsuniversity.edu.ng, portalenquiries@bellsuniversity.edu.ng, ictdirector@bellsuniversity.edu.ng</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    Copyright &copy; 2026 <a href="#">ESSCON</a>. All rights reserved.
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
