@@ -33,7 +33,7 @@ app.secret_key = os.environ.get("HONEYPOT_SECRET", "bells_honeypot_key_2024")
 # ─────────────────────────────────────────────────────────────────────────────
 DB_CONFIG = {
     "host":     os.environ.get("DB_HOST",     "mysql-2331aef0-faithshubshoneypot.b.aivencloud.com"),
-    "port":     int(os.environ.get("DB_PORT", 24564)),
+    "port":     int(os.environ.get("DB_PORT", "24564")),
     "user":     os.environ.get("DB_USER",     "avnadmin"),
     "password": os.environ.get("DB_PASSWORD", "AVNS_RYEalRtT-er10pNjkwS"),
     "database": os.environ.get("DB_NAME",     "defaultdb"),
