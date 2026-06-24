@@ -1,1 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Details - Bells University Student Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body { background: #f0f0f0; font-size: 13px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .top-bar { background: #222; color: #ccc; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; min-height: 36px; }
+  .top-bar a { color: #ccc; font-size: 12px; text-decoration: none; }
+  .top-bar a:hover { color: #fff; }
+  .top-bar .username { font-size: 12px; font-weight: 600; }
+  .top-bar .left, .top-bar .right { display: flex; align-items: center; gap: 16px; }
+  .header-strip { background: #fff; border-bottom: 1px solid #ddd; display: flex; align-items: center; justify-content: space-between; padding: 10px 18px; }
+  .header-strip .logo-area img { height: 68px; }
+  .header-strip .logo-text h3 { color: #2e6da4; margin: 0; font-size: 18px; font-weight: 700; line-height: 1.2; }
+  .header-strip .logo-text h5 { color: #5a9fd4; margin: 3px 0 0; font-size: 13px; font-weight: 600; }
+  .icon-btns { display: flex; gap: 4px; }
+  .icon-btn { border: 1px solid #ccc; border-radius: 3px; background: #fff; padding: 8px 12px; text-align: center; font-size: 11px; color: #555; text-decoration: none; display: block; min-width: 80px; }
+  .icon-btn:hover { background: #f5f5f5; color: #333; text-decoration: none; }
+  .icon-btn i { display: block; font-size: 20px; margin-bottom: 3px; }
+  .page-header-bar { background: #444; color: #fff; padding: 9px 16px; font-size: 13px; display: flex; align-items: center; gap: 8px; }
+  .page-header-bar .welcome { font-weight: normal; font-size: 12px; color: #ccc; }
+  .payment-wrapper { max-width: 900px; margin: 20px auto; padding: 0 16px; }
+  .payment-card { background: #fff; border: 1px solid #ddd; border-radius: 3px; padding: 0; }
+  .payment-card .card-title { padding: 12px 16px; font-size: 14px; font-weight: 700; color: #333; border-bottom: 1px solid #eee; }
+  .info-banner { background: #2e9e6e; color: #fff; padding: 12px 16px; margin: 14px; border-radius: 3px; font-size: 12px; line-height: 1.7; }
+  .info-banner strong { text-decoration: underline; }
+  .info-banner a { color: #fff; text-decoration: underline; }
+  .detail-table { width: 100%; border-collapse: collapse; }
+  .detail-table td { padding: 10px 16px; border-bottom: 1px solid #f2f2f2; font-size: 13px; }
+  .detail-table td.label-col { color: #337ab7; font-size: 12px; width: 220px; }
+  .detail-table td.value-col { color: #337ab7; font-weight: 700; }
+  .detail-table td.amount-col { color: #337ab7; font-weight: 700; font-family: monospace; }
+  .detail-table .total-row td { font-weight: 700; }
+  .btn-area { padding: 16px 16px 20px; display: flex; gap: 8px; }
+  .btn-return { background: #444; color: #fff; border: none; border-radius: 3px; padding: 8px 18px; font-size: 13px; cursor: pointer; }
+  .btn-paynow { background: #444; color: #fff; border: none; border-radius: 3px; padding: 8px 18px; font-size: 13px; cursor: pointer; }
+  .card-logos { display: flex; align-items: center; gap: 12px; padding: 14px 16px 20px; border-top: 1px solid #eee; flex-wrap: wrap; }
+  .footer-copy { text-align: center; font-size: 12px; color: #888; padding: 12px; border-top: 1px solid #ddd; margin-top: 8px; }
+  .footer-copy a { color: #5b9bd5; }
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="left">
+    <span class="username"><i class="fa fa-user-circle"></i> {{ student.full_name }}</span>
+    <a href="#"><i class="fa fa-bars"></i></a>
+  </div>
+  <div class="right">
+    <a href="#"><i class="fa fa-briefcase"></i> Change Password</a>
+    <a href="/login"><i class="fa fa-sign-out"></i> Logout</a>
+  </div>
+</div>
+
+<div class="header-strip">
+  <div class="logo-area" style="display:flex;align-items:center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bells_University_of_Technology_logo.png/200px-Bells_University_of_Technology_logo.png"
+         alt="Bells Logo" onerror="this.style.display='none'" style="margin-right:10px;">
+    <div class="logo-text">
+      <h3>BELLS UNIVERSITY<br>OF TECHNOLOGY</h3>
+      <h5>Student Portal</h5>
+    </div>
+  </div>
+  <div class="icon-btns">
+    <a class="icon-btn" href="/portalhome.php"><i class="fa fa-desktop"></i>Home Page</a>
+    <a class="icon-btn" href="#"><i class="fa fa-book"></i>Register Courses</a>
+    <a class="icon-btn" href="/payment-details.php"><i class="fa fa-dollar"></i>Pay Tuition</a>
+    <a class="icon-btn" href="#"><i class="fa fa-user"></i>Profile</a>
+  </div>
+</div>
+
+<div class="page-header-bar">
+  <i class="fa fa-bars"></i>
+  <span>Home Page</span>
+  <span class="welcome">Welcome, {{ student.full_name }}</span>
+</div>
+
+<div class="payment-wrapper">
+  <div class="payment-card">
+    <div class="card-title">PAYMENT DETAILS</div>
+
+    <div class="info-banner">
+      Your transaction reference is given as
+      <strong>( {{ txn_ref }} )</strong>.<br>
+      Please note this number as it may be used for tracking your payment.<br>
+      Kindly be made aware that the specified Registration Number
+      <strong>( {{ student.matric_no }} )</strong> belongs to
+      <strong>( {{ student.full_name }} )</strong>.<br>
+      <a href="#">Click on "Pay Now" button below to confirm your payment on behalf of the Matric number and Name indicated above.</a>
+    </div>
+
+    <table class="detail-table">
+      <tr>
+        <td class="label-col">Matric Number:</td>
+        <td class="value-col">{{ student.matric_no }}</td>
+      </tr>
+      <tr>
+        <td class="label-col">Fullname:</td>
+        <td class="value-col">{{ student.full_name }}</td>
+      </tr>
+      <tr><td colspan="2" style="padding:4px;"></td></tr>
+      <tr>
+        <td class="label-col">Session Information:</td>
+        <td class="value-col">{{ student.session }} Session, (EXTENSION)</td>
+      </tr>
+      <tr>
+        <td class="label-col">Payment Description:</td>
+        <td class="value-col">{{ student.level }}L Tuition Fee (Extension Fee)</td>
+      </tr>
+      <tr><td colspan="2" style="padding:4px;"></td></tr>
+      <tr>
+        <td class="label-col">Tuition:</td>
+        <td class="amount-col">=N= 150,000:00</td>
+      </tr>
+      <tr>
+        <td class="label-col">Transaction Fee:</td>
+        <td class="amount-col">=N= 350:00</td>
+      </tr>
+      <tr class="total-row">
+        <td class="label-col">Total:</td>
+        <td class="amount-col">=N= 150,350:00</td>
+      </tr>
+    </table>
+
+    <div class="btn-area">
+      <form method="POST" action="/payment-details.php" style="display:inline;">
+        <button type="submit" class="btn-return">&laquo; Return</button>
+      </form>
+      <form method="POST" action="/pay-now" style="display:inline;">
+        <input type="hidden" name="txn_ref"   value="{{ txn_ref }}">
+        <input type="hidden" name="matric_no" value="{{ student.matric_no }}">
+        <input type="hidden" name="amount"    value="150000">
+        <input type="hidden" name="fee"       value="350">
+        <input type="hidden" name="total"     value="150350">
+        <input type="hidden" name="session"   value="{{ student.session }}">
+        <input type="hidden" name="level"     value="{{ student.level }}">
+        <button type="submit" class="btn-paynow">Pay Now &raquo;</button>
+      </form>
+    </div>
+
+    <div class="card-logos">
+      <span style="font-size:11px;font-weight:700;color:#eb001b;">MasterCard</span>
+      <span style="font-size:11px;font-weight:700;color:#f26522;">Interswitch</span>
+      <span style="font-size:11px;font-weight:700;color:#e2231a;">Verve</span>
+      <span style="font-size:11px;font-weight:700;color:#1a1f71;">VISA</span>
+    </div>
+
+  </div>
+
+  <div class="footer-copy">
+    Copyright &copy; 2026 <a href="#">ESSCON</a>. All rights reserved.
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
